@@ -36,8 +36,6 @@ def least_recent_change(source):
 
 def main():
     result = most_recent_change(fileinput.input())
-    print(result)
-
     print("Ordered by least recent")
     for (filename, time) in sorted(result.items(), key=lambda x: x[1]):
         print('\t', filename, '\t', time.date())

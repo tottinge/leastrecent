@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime, timezone, timedelta
 
 from lib.dateparser import DateParser
-from lib.least_recent_change import least_recent_change
+from least_recent_change import least_recent_change
 
 
 class LeastRecentChangeAlgorithm(unittest.TestCase):

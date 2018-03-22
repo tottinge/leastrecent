@@ -2,7 +2,7 @@ import re
 
 
 class FileLineParser(object):
-    file_line_regex = re.compile("\d+\s+\d+\s+(\S+)")
+    file_line_regex = re.compile("^\d+\s+\d+\s+(\S+)$")
 
     def __init__(self, text):
         self.text = text
